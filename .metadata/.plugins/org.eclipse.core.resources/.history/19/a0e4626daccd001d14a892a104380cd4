@@ -1,0 +1,17 @@
+
+public class CriaConta {
+	
+	
+	public static void main(String[] args) {
+		
+	Conta  primeiraconta =	new Conta();
+		
+	saldo.primeiraconta = 200;
+	
+	
+	}
+	
+	
+	
+
+}

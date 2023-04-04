@@ -1,0 +1,23 @@
+
+public class TestaMetodo {
+	
+	
+	
+	public static void main (String [] args) {
+		
+		
+		Conta ismar = new Conta ();
+		ismar.saldo = 150;
+		ismar.deposita(50);
+		
+		System.out.println(ismar.saldo);
+		
+		ismar.saca(100);
+		System.out.println("a conta ismar tem R$: " + ismar.saldo);
+		
+		
+		
+		
+	}
+
+}

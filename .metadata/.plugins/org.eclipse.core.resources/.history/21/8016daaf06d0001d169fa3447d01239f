@@ -1,0 +1,48 @@
+
+public class TestaMetodo {
+	
+	
+	
+	public static void main (String [] args) {
+		
+		
+		Conta contaDoIsmar = new Conta ();
+		contaDoIsmar.saldo = 150;
+		contaDoIsmar.deposita(50);
+		
+		System.out.println("saldo da conta do ismar ! " + contaDoIsmar.saldo);
+		
+		
+		if (contaDoIsmar.saca(100)) {
+			
+			System.out.println("saque realizado !");
+		}else {
+			
+			System.out.println("dinheiro insuficiente");
+		}
+		
+		
+		
+		System.out.println("a conta do ismar tem R$: " + contaDoIsmar.saldo);
+		
+		
+		Conta contaDaMarcela = new Conta ();
+		contaDaMarcela.deposita(1000);
+		
+		if(contaDaMarcela.transfere(500, contaDoIsmar)) {
+			
+			System.out.println("transferencia realizada !");
+			
+		}else {
+			
+			System.out.println("saldo insuficiente !");
+			
+		}
+		
+		System.out.println("saldo da conta do ismar: " + contaDoIsmar.saldo);
+		System.out.println("saldo da conta da marcela : " + contaDaMarcela.saldo);
+		
+		
+	}
+
+}
